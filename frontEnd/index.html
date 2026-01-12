@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Management System</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="favicon.png" />
+</head>
+<body>
+    <header>
+        <h1>🏥 Patient Management System</h1>
+        
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Operations</h2>
+            
+            <div class="button-group">
+                <h3>View Operations</h3>
+                <button onclick="viewAllPatients()">📋 View All Patients</button>
+                <button onclick="showViewPatientForm()">🔍 View Single Patient</button>
+                <button onclick="showSortForm()">📊 Sort Patients</button>
+            </div>
+
+            <div class="button-group">
+                <h3>Manage Patients</h3>
+                <button onclick="showCreateForm()">➕ Create Patient</button>
+                <button onclick="showUpdateForm()">✏️ Update Patient</button>
+                <button onclick="showDeleteForm()">🗑️ Delete Patient</button>
+            </div>
+
+            <div class="button-group">
+                <h3>AI Agent</h3>
+                <button onclick="showAgentForm()">🤖 Use Agent</button>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div id="response-area">
+                <div class="welcome-message">
+                    <h2>Welcome to Patient Management System</h2>
+                    <p>Select an operation from the sidebar to get started</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
