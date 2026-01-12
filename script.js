@@ -1,5 +1,5 @@
 
-const API_BASE_URL = 'http://localhost:8000';
+const API_BASE_URL = 'https://web-production-53d09.up.railway.app';
 const responseArea = document.getElementById('response-area');
 
 function clearResponse() {
